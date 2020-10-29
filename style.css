@@ -17,3 +17,20 @@ a {
 	font-weight: 100;
 	font-size: 20px;
 }
+
+.footer {
+	position: absolute;
+	bottom: 0px;
+	width: 60%;
+}
+
+.copyright {
+	text-align: center;
+	font-family: "Open Sans";
+	font-size: 15px;
+}
+
+.copyright a {
+	text-decoration: none;
+	color: #08088A;
+}
