@@ -1,0 +1,19 @@
+body {
+	color: #2e2e2e;
+	text-align: justified;
+	font-family: "Courier Prime";
+	width: 60%;
+	margin: auto;
+}
+
+a {
+	color: #ff8000;
+}
+
+.page-heading {
+	text-align: center;
+	text-decoration: none;
+	font-family: "Open Sans";
+	font-weight: 100;
+	font-size: 20px;
+}
