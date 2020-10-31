@@ -19,9 +19,8 @@ a {
 }
 
 .footer {
-	position: absolute;
-	bottom: 0px;
-	width: 60%;
+	position: relative;
+	width: 100%;
 }
 
 .copyright {
