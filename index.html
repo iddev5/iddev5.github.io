@@ -54,7 +54,33 @@
 		<p><b>Links:</b> [<a href = "https://github.com/iddev5">GitHub</a>][<a href = "https://twitter.com/iddev5">Twitter</a>][<a href = "https://iddev.itch.io">Itch.io</a>]</p>
 		<p><b>Contact:</b> iddev <i>dot</i> info <i>at</i> pm <i>dot</i> me</p>
 		<hr>
-		<p class = "copyright">Copyright 2020 Ayush Bardhan Tripathy(idhank/iddev). Best Viewed With <a href = "https://anybrowser.org/campaign/"><b>Any</b></a> Browser.</p>
+		<p class = "copyright">Copyright 2020 Ayush Bardhan Tripathy(idhank/iddev). Best Viewed With <a id = "anylink" href = "https://anybrowser.org/campaign/"><b>Any</b></a> Browser. [<a id = "themebutton" onclick = "SwitchTheme()">Light Mode</a>]</p>
 		</div>
 		</body>
+		<script type = "text/javascript">
+			let theme = "light";			
+			
+			let light = {};
+			light.background = "#ffffff";
+			light.color = "#000000";
+			light.anylink = "#08088A";
+			light.themebutton = "Light Mode";			
+
+			let dark = {};
+			dark.background = "#000000";
+			dark.color = "#ffffff";
+			dark.anylink = "#ff0000";
+			dark.themebutton = "Dark Mode";
+
+			function SwitchTheme() {
+				let current = (theme === "light") ? dark : light;
+
+				document.body.style.background = current.background;
+				document.body.style.color = current.color;
+				document.getElementById("anylink").style.color = current.anylink;
+				document.getElementById("themebutton").text = current.themebutton;
+			
+				theme = (theme === "light") ? "dark" : "light";
+			}
+		</script>
 </html>
