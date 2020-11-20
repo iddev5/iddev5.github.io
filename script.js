@@ -22,3 +22,6 @@ function SwitchTheme() {
 
 	theme = (theme === "light") ? "dark" : "light"; 
 }
+
+// Switch to dark theme as soon as page loads
+SwitchTheme();
