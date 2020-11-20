@@ -1,2 +1,5 @@
 # Vim text editor
 *.swp
+
+# Web server files
+*.conf
