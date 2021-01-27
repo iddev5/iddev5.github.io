@@ -13,7 +13,7 @@ dark.anylink = "#ff0000";
 dark.themebutton = "Dark Mode";
 
 function isMobile() {
-	return (window.innerWidth <= 600) && (window.innerHeight <= 400);
+	return (window.innerWidth <= 800) && (window.innerHeight <= 800);
 }
 
 function SwitchTheme() {
