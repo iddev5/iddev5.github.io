@@ -1,7 +1,7 @@
 body {
 	color: #2e2e2e;
 	text-align: justified;
-	font-family: "Courier Prime";
+    font-family: "Inconsolata", monospace;
 	width: 60%;
 	margin: auto;
 }
@@ -43,5 +43,5 @@ a:hover:not(.page-heading):not(#anylink) {
 
 #anylink {
 	text-decoration: none;
-	color: #08088A;
+	color: #A8080A;
 }
