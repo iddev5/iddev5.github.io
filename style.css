@@ -6,12 +6,20 @@ body {
 	margin: auto;
 }
 
-a {
-	color: #ff8000;
-}
-
 hr {
 	background-color: #ffffff;
+}
+
+a {
+	color: #0000f8;
+}
+
+a:hover:not(.page-heading):not(#anylink) {
+    color: #ffffff;
+    background-color: #000000;
+    text-decoration: none;
+    padding: 2px;
+    margin: -2px;
 }
 
 .page-heading {
