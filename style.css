@@ -50,11 +50,13 @@ body {
   padding: 0 1.5vw;
 }
 
-.menu-item a:hover, a:active {
+.menu-item a:hover,
+a:active {
   color: #42a0fa;
 }
 
-.menu-item a:link, a:visited {
+.menu-item a:link,
+a:visited {
   text-decoration: none;
   color: inherit;
 }
@@ -89,7 +91,10 @@ footer .copyright {
   padding: 4px;
 }
 
-footer a:link, a:hover, a:visited, a:active {
+footer a:link,
+a:hover,
+a:visited,
+a:active {
   color: var(--link-blue);
   text-decoration: none;
 }
