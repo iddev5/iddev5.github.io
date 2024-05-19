@@ -22,11 +22,22 @@ body {
   width: 100%;
   padding-top: 5vh;
   background-color: #141414;
+  padding-bottom: 2vh;
 }
 
 #hero h1 {
   font-size: 3em;
   color: #42a0fa;
+}
+
+.socials a {
+  text-decoration: none;
+  margin: 10px;
+}
+
+.socials img {
+  width: 25px;
+  height: 25px;
 }
 
 .menu {
@@ -51,12 +62,12 @@ body {
 }
 
 .menu-item a:hover,
-a:active {
+.menu-item a:active {
   color: #42a0fa;
 }
 
 .menu-item a:link,
-a:visited {
+.menu-item a:visited {
   text-decoration: none;
   color: inherit;
 }
@@ -65,10 +76,14 @@ a:visited {
   text-align: center;
   font-size: 1.4em;
   padding: 8vh 15vw;
+  padding-bottom: 2vh;
 }
 
 #stack {
-  padding-top: 8vh;
+  padding-top: 2vh;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 2vh;
 }
 
 footer {
