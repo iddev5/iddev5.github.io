@@ -86,8 +86,24 @@ body {
   padding-bottom: 2vh;
 }
 
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+#projects a:link,
+#projects a:visited,
+#projects a:active,
+#projects a:hover {
+  text-decoration: none;
+  color: var(--link-blue);
+}
+
 footer {
-  position: absolute;
+  position: relative;
   width: 100%;
   background-color: #141414;
   bottom: 0px;
@@ -112,4 +128,32 @@ a:visited,
 a:active {
   color: var(--link-blue);
   text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  #hero .logo {
+    transform: scale(70%);
+  }
+
+  #hero {
+    text-align: center;
+  }
+
+  .menu-name {
+    display: none;
+    width: 0px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .menu-main {
+    font-size: 1.4em;
+    padding-top: 7vw;
+    padding-bottom: 4vw;
+  }
+
+  #projects {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
 }
