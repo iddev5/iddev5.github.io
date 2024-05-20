@@ -1,126 +1,144 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayush's Portfolio</title>
+  </head>
+  <body>
+    <div id="hero">
+      <svg class="logo" width="500" height="500">
+        <mask id="svgmask">
+          <polygon
+            fill="#ffffff"
+            points="250 0, 500 250, 250 500, 0 250"
+          ></polygon>
+        </mask>
+        <image
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xlink:href="public/self.jpg"
+          mask="url(#svgmask)"
+        ></image>
+      </svg>
 
-<html>
-	<head>
-		<title>iddev's Homepage</title>
-		<link rel = "stylesheet" href = "style.css">
-        <link rel = "stylesheet" href = "https://fonts.googleapis.com/css2?family=Courier+Prime&family=Open+Sans&display=swap">
-		<meta charset = "UTF-8">
-		<meta name = "description" content = "This is iddev's homepage">
-		<meta name = "author" content = "Ayush Bardhan Tripathy">
-		<meta name = "keywords" content = "iddev5, idhank, Deccan Engine">
-		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-	</head>
-	<body>
-		<a href = "index.html" class = "page-heading"><h1>IDDEV'S Homepage</h1></a>
-		<hr>
-		<p>
-        Hello, I am Ayush, also known as idhank or iddev. I am a game developer, designer and programmer. 
-        I am a Linux user and enthusiast. I like and support Free and Open Source Softwares (FOSS). </p>
+      <h1>Hello, This is Ayush!</h1>
+      <p>
+        Programmer, Game Developer, Aspiring Entrepreneur, Tech Enthusiast and a
+        B.Tech Student...
+      </p>
 
-        <p>💠 <b>Programming Languages</b>: C, Zig, Python, Lua, NodeJS, Web(HTML/CSS)</p>
-        
-        <p>📻 <b>Game Engines</b>: <a href = "https://github.com/deccanengine/DeccanEngine">Deccan Engine</a>, Love2D, GDevelop, olcPixelGameEngine</p>
-        
-        <p>🚀 <b>Projects:</b></p>
-        <ul>
-			<li>
-                <b>Deccan Engine</b> is an Open-Source Cross-platform 2D Game Engine written in C11 and is powered by SDL.
-				[<a href = "https://deccanengine.github.io">Website</a>]
-                [<a href = "https://github.com/deccanengine/DeccanEngine">GitHub</a>]
-                [<a href = "https://trello.com/b/4uXcgOJ6/deccan-engine">Trello</a>]
-			</li>
-			<br>
-            
-            <li>
-                <b>documake</b> is a Simple YAML -> RST converted to be used with Sphinx. Written in Python3.
-                [<a href = "https://github.com/iddev5/documake">GitHub</a>]
-            </li>
-            <br>
-            
-            <li>
-                <b>mktestimg</b> is a Simple CLI application to quickly generate an image of given dimension.
-                [<a href = "https://github.com/iddev5/mktestimg">GitHub</a>]
-            </li>
-            <br>
-			
-            <li>
-                <b>Cobalt Build System</b> is a simple, experimental build system for C projects, 
-                written in a "single-file" Python source. It is inspired from Bake and Meson. 
-                [<a href = "https://github.com/iddev5/cobalt">GitHub</a>]
-			</li>
-			<br>
-            
-            <li>
-                <b>Lime Browser</b> is a simple browser in PyQt5 just for learning...
-                [<a href = "https://github.com/iddev5/LimeBrowser">GitHub</a>]
-            </li>
-            <br>
-			
-            <li>
-				<b>INTP</b> is an interpreted programming language written in C and was meant to be used as an embedded language, 
-                though it never advanced to that stage and currently barebones and abandoned. 
-                [<a href = "https://github.com/iddev5/intp">GitHub</a>]
-			</li>
-			<br>
-			
-            <li>
-				<b>Raven2D Engine</b> is a C++ Object-Oriented game engine based on SDL2. 
-                My first successful attempt at making a game engine. 
-                [<a href = "https://github.com/iddev5/raven2d-game-engine">GitHub</a>]
-			</li>
-            <br>
+      <div class="socials">
+	<a href="https://github.com/iddev5">
+		<img src="/public/icons/github.svg" />
+	</a>
+	<a href="">
+		<img src="/public/icons/matrix.svg" />
+	</a>
+	<a href="https://linked.in/">
+		<img src="/public/icons/linkedin.svg" />
+	</a>
+	<a href="https://iddev.itch.io">
+		<img src="/public/icons/itchio.svg" />
+	</a>
+	<a href="mailto:ayuhbardhan5@gmail.com">
+		<img src="/public/icons/email.svg" />
+	</a>
+</div>
 
-			<li>
-				<b>Rockett</b> is a casual, arcade-style game about controlling Rockets with wobbly physics, 
-                to shoot down enemy planes while protecting friendly forces. 
-                [<a href = "https://iddev.itch.io/rockett">Itch.io</a>]
-			</li>
-			<br>
-			
-            <li>
-				<b>Overwatcher Bot</b> is an auto-moderation bot written in NodeJS as my first real(or sensible) 
-                NodeJS practice project. Not actively developed or hosted, you are free to fork and learn from it! 
-                [<a href = "https://github.com/iddev5/Overwatcher-Bot">GitHub</a>]
-			</li>
-		</ul>
-		<p>🔰 <b>Other things:</b></p>
-		<p><i>This includes my other repositories and contributions.</i><p>
-		<ul>
-			<li>
-                <b>Pandomiser Bot</b> is a Discord bot(written in NodeJS) that is based on randomisation, 
-                i.e it can send random things based on a given command. 
-                [<a href = "https://github.com/DaLiteralPanda/Pandomiser">GitHub</a>]
-                [<a href = "https://discord.com/api/oauth2/authorize?client_id=727208128071991307&permissions=387136&scope=bot">Invite</a>]
-			</li>
-			<br>
-			
-            <li>
-                <b>Script Snippets</b> A collection of small (mostly one liner) script snippets (Linux, POSIX-shell, Fish-shell) which I find useful. 
-                [<a href = "https://ayush.thedev.id/ScriptSnippets">Read</a>]
-                [<a href = "https://github.com/iddev5/ScriptSnippets">GitHub</a>]
-			</li>
-		</ul>
-        <p>🔧 <b>Forks/Branches:</b></p>
-        <p><i>This includes my repositories which are forks or my personal branches of other projects.</i></p>
-        <ul>
-            <li>
-                <b>stddoc.c</b> Tiny documentation generator for 60 programming languages. Using Markdeep.
-                [<a href = "https://github.com/iddev5/stddoc.c">GitHub</a>]
-                [<a href = "https://github.com/r-lyeh/stddoc.c">Original Repo</a>]
-            </li>
-        </ul>
-		<div class = "footer">
-		<p>📜 <b>Links:</b> 
-            [<a href = "https://github.com/iddev5">GitHub</a>]
-            [<a href = "https://twitter.com/iddev5">Twitter</a>]
-            [<a href = "https://iddev.itch.io">Itch.io</a>]</p>
-		<p>📢 <b>Contact:</b> iddev <i>dot</i> info <i>at</i> pm <i>dot</i> me</p>
-		<hr>
-		<p class = "copyright">Copyright 2020 Ayush Bardhan Tripathy(idhank/iddev). Best Viewed With
-            <a id = "anylink" href = "https://anybrowser.org/campaign/"><b>Any</b></a> Browser. 
-            [<a id = "themebutton" onclick = "SwitchTheme()">Light Mode</a>]</p>
-		</div>
-		</body>
-		<script type = "text/javascript" src = "script.js"></script>
+    </div>
+    
+    <div class="menu">
+  <p class="menu-name"><a style="text-decoration: none;" href="/">Ayush Bardhan Tripathy</a></p>
+  <div class="menu-main">
+    <div class="menu-item">
+      <a href="/projects.html">PROJECTS</a>
+    </div>
+    <div class="menu-item">
+      <a>BLOGS</a>
+    </div>
+    <div class="menu-item">
+      <a>CV</a>
+    </div>
+  </div>
+</div>
+
+    
+<div id="desc">
+  <p>
+  Hello, I am Ayush Bardhan Tripathy. I am a programmer, Linux user and tech
+  enthusiast. I contribute to open source projects. Currently I am pursuing my 
+  Bachelor of Technology (B. Tech) in Electronics and Telecommunication 
+  Engineering (ETC) from Veer Surendra Sai University of Techonology, Burla.
+  </p>
+
+  <p style="color: var(--link-blue); margin: 0px;">My tech stack is:</p>
+  <div id="stack">
+    <img
+      src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white"
+    />
+    <img
+      src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+    />
+    <img
+      src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
+    />
+    <img
+      src="https://img.shields.io/badge/Zig-F7A41D?style=for-the-badge&logo=zig&logoColor=fff"
+    />
+    <img
+      src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
+    />
+    <img
+      src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"
+    />
+    <img
+      src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi"
+    />
+    <img
+      src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"
+    />
+    <img
+      src="https://img.shields.io/badge/OpenGL-%23FFFFFF.svg?style=for-the-badge&logo=opengl"
+    />
+    <img
+      src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+    />
+    <img
+      src="https://img.shields.io/badge/svelte-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white"
+    />
+    <img
+      src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white"
+    />
+    <img
+      src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white"
+    />
+  </div>
+
+  <p>
+  I'm interested in Web Development, Backend Technologies, 
+  Operating Systems, Compilers, Frameworks, WebAssembly, 
+  Embedded Systems and so on.
+  </p>
+
+  <h3 style="font-weight: 400; text-decoration: none;">
+    Do checkout my <a href="/projects.html">projects</a>!</h3>
+</div>
+
+    <footer>
+  <div class="contacts">
+    <h2>Contact me:</h2>
+    <div class="contact">
+      Email:
+      <a href="mailto:ayushbardhan5@gmail.com">ayushbardhan5@gmail.com</a>
+    </div>
+    <div class="contact">
+      Matrix: <a href="https://matrix.to/#/@iddev5:matrix.org">iddev5</a>
+    </div>
+  </div>
+  <div class="copyright">Copyright 2024 Ayush Bardhan Tripathy. Made with <a href="/iceage-ssg">iceage</a></div>
+</footer>
+
+  </body>
 </html>
