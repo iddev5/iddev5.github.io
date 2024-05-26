@@ -76,7 +76,7 @@ body {
   text-align: center;
   font-size: 1.4em;
   padding: 8vh 15vw;
-  padding-bottom: 2vh;
+  padding-bottom: 20vh;
 }
 
 #stack {
@@ -92,6 +92,11 @@ body {
   align-items: center;
   padding-left: 15vw;
   padding-right: 15vw;
+  padding-bottom: 5vh;
+}
+
+#projects ul {
+  max-width: 90%;
 }
 
 #projects a:link,
@@ -107,6 +112,7 @@ footer {
   width: 100%;
   background-color: #141414;
   bottom: 0px;
+  padding-top: 2vh;
   padding-left: 2vw;
   padding-bottom: 8vh;
 }
@@ -151,7 +157,7 @@ a:active {
     padding-top: 7vw;
     padding-bottom: 4vw;
   }
-  
+
   #projects {
     padding-left: 2vw;
     padding-right: 2vw;
