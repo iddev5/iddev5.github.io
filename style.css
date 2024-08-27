@@ -138,6 +138,7 @@ a:active {
 
 @media only screen and (max-width: 600px) {
   #hero .logo {
+    min-height: 500px;
     transform: scale(70%);
   }
 
