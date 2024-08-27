@@ -1,0 +1,26 @@
+title: Embeddable Virtual Machines
+layout: posts.html
+draft: true
+---
+<p>Some common embeddable virtual machines are:<p>
+
+<ul>
+  <li>Java Virtual Machine (JVM)</li>
+  <li>Web Assembly (WASM)</li>
+  <li>BEAM VM</li>
+  <li>.NET CLR (and Mono) - The .NET Common Language Runtime is a virtual machine part of .NET Framework. It can optionally convert the IR code into machine code Just-In-Time (JIT) for faster execution. As always, it provides memory management, type safety, expection handling, garbage collection etc. The large ecosystem of .NET comprising of numerous frameworks and tools makes it an enticing choice. </li>
+  <li>ART (and previously Dalvik) - Dalvik was the original virtual machine used in Android. It was responsible for running all programs written for Android. Dalvik bytecode format is still used as a distribution format but Dalvik itself is not longer available in newer versions of Android.</li> 
+  <li>LLVM</li>
+
+</ul>
+<h2>Notable mentions:</h2>
+This section contains VMs which you may try to use but its not recommended for reasons like lack of documentation, difficulty of embedding, text based format or other reasons.
+<ul>
+  <li>GCC</li>
+  <li>Zend Engine (from PHP)</li>
+  <li>Neko and Lua - Haxe also has a newer VM called HashLink but I found it much tightly coupled with haxe that it doesnt seems like a good choice. While these are very different from each other, it is put here because of the article present at neko's website</li>
+</ul>
+
+<h2>Just for info</h2>
+<p>Python also has an internal bytecode but its not standard and not stable. It may change across different versions of python and it designed specifically for python.</p>
+<p>Parrot VM is a discontinued register-based VM designed to run dynamic languages. It was designed by Perl community for Raku and was later abandoned in favour of MoarVM.</p>
