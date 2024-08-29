@@ -86,6 +86,10 @@ body {
   padding-bottom: 2vh;
 }
 
+.content {
+  min-height: 100vh;
+}
+
 #projects {
   display: flex;
   flex-direction: column;
@@ -108,10 +112,14 @@ body {
 }
 
 footer {
-  position: absolute;
+  position: relative;
+}
+
+.footer {
+  position: relative;
   width: 100%;
   background-color: #141414;
-  bottom: 0px;
+  bottom: 0;
   padding-top: 2vh;
   padding-left: 2vw;
   padding-bottom: 8vh;
