@@ -9,7 +9,6 @@ body {
   background-color: #242424;
   margin: 0px;
   padding: 0px;
-  height: 200vh;
   position: relative;
   overflow-x: hidden;
 }
@@ -72,13 +71,6 @@ body {
   color: inherit;
 }
 
-#desc {
-  text-align: center;
-  font-size: 1.4em;
-  padding: 8vh 15vw;
-  padding-bottom: 20vh;
-}
-
 #stack {
   padding-top: 2vh;
   padding-left: 10%;
@@ -86,32 +78,26 @@ body {
   padding-bottom: 2vh;
 }
 
-#projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 15vw;
-  padding-right: 15vw;
-  padding-bottom: 5vh;
+.content {
+  text-align: justified;
+  font-size: 1.4em;
+  padding: 8vh 15vw;
+  padding-bottom: 20vh;
 }
 
-#projects ul {
-  max-width: 90%;
-}
-
-#projects a:link,
-#projects a:visited,
-#projects a:active,
-#projects a:hover {
-  text-decoration: none;
-  color: var(--link-blue);
+.text-center {
+  text-align: center;
 }
 
 footer {
   position: relative;
+}
+
+.footer {
+  position: relative;
   width: 100%;
   background-color: #141414;
-  bottom: 0px;
+  bottom: 0;
   padding-top: 2vh;
   padding-left: 2vw;
   padding-bottom: 8vh;
@@ -136,6 +122,10 @@ a:active {
   text-decoration: none;
 }
 
+.mobile-only {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
   #hero .logo {
     min-height: 500px;
@@ -144,6 +134,7 @@ a:active {
 
   #hero {
     text-align: center;
+    height: 100%;
   }
 
   .menu-name {
@@ -159,8 +150,14 @@ a:active {
     padding-bottom: 4vw;
   }
 
-  #projects {
-    padding-left: 2vw;
-    padding-right: 2vw;
+  .content {
+    text-align: justified;
+    font-size: 1.1em;
+    padding: 8vh 5vw;
+    padding-bottom: 20vh;
+  }
+
+  .mobile-only {
+    display: inline;
   }
 }
