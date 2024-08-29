@@ -92,7 +92,7 @@ body {
   align-items: center;
   padding-left: 15vw;
   padding-right: 15vw;
-  padding-bottom: 5vh;
+  padding-bottom: 0;
 }
 
 #projects ul {
@@ -108,7 +108,7 @@ body {
 }
 
 footer {
-  position: relative;
+  position: absolute;
   width: 100%;
   background-color: #141414;
   bottom: 0px;
