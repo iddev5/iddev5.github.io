@@ -29,6 +29,10 @@ body {
   color: #42a0fa;
 }
 
+#hero p {
+  padding: 0 2vw;
+}
+
 .socials a {
   text-decoration: none;
   margin: 10px;
@@ -79,10 +83,9 @@ body {
 }
 
 .content {
-  text-align: justified;
+  text-align: left;
   font-size: 1.4em;
-  padding: 8vh 15vw;
-  padding-bottom: 20vh;
+  padding: 8vh 10vw 20vh 13vw;
 }
 
 .text-center {
@@ -91,6 +94,7 @@ body {
 
 footer {
   position: relative;
+  overflow-x: hidden;
 }
 
 .footer {
@@ -110,8 +114,8 @@ footer .copyright {
   text-align: center;
   background-color: var(--very-dark);
   color: grey;
-  width: 100%;
-  padding: 4px;
+  max-width: 100%;
+  padding: 0 3vw;
 }
 
 footer a:link,
@@ -151,7 +155,7 @@ a:active {
   }
 
   .content {
-    text-align: justified;
+    text-align: justify;
     font-size: 1.1em;
     padding: 8vh 5vw;
     padding-bottom: 20vh;
