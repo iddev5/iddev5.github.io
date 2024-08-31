@@ -52,6 +52,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   background-color: #080808;
+  box-shadow: 0px 1em 2em rgb(43, 47, 49);
 }
 
 .menu-main {
@@ -114,8 +115,8 @@ footer .copyright {
   text-align: center;
   background-color: var(--very-dark);
   color: grey;
-  max-width: 100%;
-  padding: 0 3vw;
+  min-width: 100%;
+  padding: 1vh 3vw;
 }
 
 footer a:link,
@@ -163,5 +164,9 @@ a:active {
 
   .mobile-only {
     display: inline;
+  }
+
+  footer .copyright {
+    padding: 1vh 0;
   }
 }
