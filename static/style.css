@@ -119,6 +119,10 @@ footer .copyright {
   padding: 1vh 3vw;
 }
 
+a, a:hover, a:visited, a:active {
+  color: var(--light-blue);
+}
+
 footer a:link,
 a:hover,
 a:visited,
