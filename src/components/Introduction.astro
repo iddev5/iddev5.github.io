@@ -1,5 +1,6 @@
 ---
-
+import { GitHubCalendar } from 'react-github-calendar';
+import { Leetcodecalendar } from 'react-leetcode-calendar';
 ---
 
 <h1 class="heading">Hey</h1>
@@ -19,6 +20,13 @@
       class="link animation">README</a
     > for more info.
   </p>
+  <GitHubCalendar username="iddev5" />
+  <Leetcodecalendar username="ayushbardhan" graph="yearly" size="small" labels={{
+    months: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    weekdays: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    totalCount: " ",
+    legend: { less: " ", more: " " }
+  }} client:idle />
 </div>
 
 <style>
