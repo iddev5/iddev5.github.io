@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Introduction from "../components/Introduction.astro";
+import Featured from "../components/Featured.astro";
+import Newsletter from "../components/Newsletter.astro";
+---
+
+<BaseLayout
+  title="Ayush's Portfolio"
+  description="The portfolio and personal blog of Ayush Bardhan Tripathy"
+  author="Ayush"
+  url="https://ayush.thedev.id"
+>
+  <div class="center">
+    <section>
+      <Introduction />
+    </section>
+    <hr />
+    <section>
+      <Featured />
+    </section>
+    <hr />
+  </div>
+</BaseLayout>
