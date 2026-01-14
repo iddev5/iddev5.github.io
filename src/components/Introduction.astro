@@ -1,24 +1,26 @@
 ---
 import { GitHubCalendar } from 'react-github-calendar';
 import { Leetcodecalendar } from 'react-leetcode-calendar';
+import Socials from "./Socials.astro";
 ---
 
 <h1 class="heading">Hey</h1>
 <div class="paragraph">
   <div id="top">
     <img src="./background.svg" width="200" height="200" />
-    <p>
-      Ryze is a modern, clean and SEO-friendly blog starter built with Astro and
-      Tailwind CSS. It's designed with accessibility in mind and offers a smooth,
-      responsive and comfortable reading experience across all devices.
-    </p>
+    <div>
+      <p className="text-justify">
+        I am Ayush Bardhan Tripathy, a programmer, tech enthusiast and
+        a student at VSSUT, Burla currently pursuing B.Tech in Computer
+        Science and Engineering (Third year).
+      </p>
+      <Socials />
+    </div>
   </div>
   <p>
-    Explore the featured section or check <a
-      href="https://github.com/8366888C/Ryze/blob/main/README.md"
-      target="blank"
-      class="link animation">README</a
-    > for more info.
+     I contribute to open source projects. I'm interested in Web
+     Development, Backend Technologies, Operating Systems, Compilers,
+     Frameworks, WebAssembly, Embedded Systems and much more.
   </p>
   <GitHubCalendar username="iddev5" />
   <Leetcodecalendar username="ayushbardhan" graph="yearly" size="small" labels={{
