@@ -38,6 +38,13 @@ const { page } = Astro.props as { page: { data: BlogType[] } };
       <a href="/posts/1" class="heading">Posts</a>
       <Year years={years} />
     </div>
+    <a
+      href="/tags"
+      class:list={[
+        "navigation animation",
+        Astro.url.pathname.startsWith("/tags") ? "text-accent" : "",
+      ]}>Browse tags</a
+    >
     <ul class="my-3 space-y-3">
       {
         page.data.map((blog: BlogType) => (
