@@ -119,6 +119,10 @@ export default function DualActivityCalendar({
           onMouseDown={startDrag}
         />
       </div>
+      <div className="flex justify-between w-[95%]">
+        <a href="https://github.com/iddev5" target="_blank" className="hover:text-accent">github</a>
+        <a href="https://leetcode.com/u/ayushbardhan/" target="_blank" className="hover:text-accent">leetcode</a>
+      </div>
     </div>
   );
 }
