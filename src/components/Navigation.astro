@@ -1,5 +1,5 @@
 ---
-
+import IconTopRight from "../assets/icons/arrow-top-right.svg";
 ---
 
 <nav class="flex items-center justify-center gap-4">
@@ -17,4 +17,12 @@
       Astro.url.pathname.startsWith("/posts") ? "text-accent" : "",
     ]}>posts</a
   >
+  <a
+    href="/Ayush Bardhan Tripathy.pdf"
+    class="navigation animation flex"
+    target="_blank"
+    >
+      cv
+      <IconTopRight class="relative size-4 top-1" />
+    </a>
 </nav>
