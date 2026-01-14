@@ -36,12 +36,14 @@ const { title, description, author, url, pubDate } = Astro.props;
       );
     </script>
   </head>
-  <body class="body-margin">
-    <GridTopRight className="absolute opacity-25" />
-    <Header />
-    <main class="main-margin bg-background relative z-1 min-h-svh border-black/10 border-1 rounded-2xl">
-      <slot />
-    </main>
-    <Footer />
+  <body className="">
+    <GridTopRight className="absolute opacity-25 left-0 w-full bottom-0" />
+    <div  class="body-margin">
+      <Header />
+      <main class="main-margin bg-background relative z-1 min-h-svh border-black/10 border-1 rounded-2xl">
+        <slot />
+      </main>
+      <Footer />
+    </div>
   </body>
 </html>
