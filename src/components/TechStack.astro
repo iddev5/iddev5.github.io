@@ -1,0 +1,34 @@
+---
+const techStacks = [
+  "c",
+  "c++",
+  "javascript",
+  "python",
+  "zig",
+  "html5",
+  "css3",
+  "fastapi",
+  "nodejs",
+  "react",
+  "nextjs",
+  "tailwind",
+  "opengl",
+  "sqlite",
+  "mysql",
+  "mongodb",
+  "vercel",
+  "aws"
+]
+---
+
+<h2 class="section-heading">T E C H S T A C K</h2>
+<div class="flex flex-wrap gap-5">
+{techStacks.map(ts =>
+  <a href="" class="border-1 border-white/20 px-5 py-1 navigation animation hover:border-accent/20">
+    {ts}
+  </a>
+)}
+</div>
+<div class="flex justify-center p-8">
+  <a href="" class="navigation">see all projects...</a>
+</div>
