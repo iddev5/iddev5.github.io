@@ -1,8 +1,4 @@
 ---
-import { GitHubCalendar } from 'react-github-calendar';
-import { Leetcodecalendar } from 'react-leetcode-calendar';
-import DualActivityCalendar from "../components/DualActivityCalendar";
-
 import Socials from "./Socials.astro";
 ---
 
@@ -24,20 +20,10 @@ import Socials from "./Socials.astro";
      Development, Backend Technologies, Operating Systems, Compilers,
      Frameworks, WebAssembly, Embedded Systems and much more.
   </p>
-  <!--GitHubCalendar username="iddev5" />
-  <Leetcodecalendar username="ayushbardhan" graph="yearly" size="small" labels={{
-    months: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-    weekdays: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-    totalCount: " ",
-    legend: { less: " ", more: " " }
-  }} client:idle /-->
-  <DualActivityCalendar
-    client:idle
-    githubUsername="iddev5"
-    leetcodeUsername="ayushbardhan"
-    githubColors={["#1a1a1a", "#c6e48b", "#7bc96f", "#239a3b", "#196127"]}
-    leetcodeColors={["#1a1a1a", "#ffd866", "#ffb703", "#fb8500", "#f97316"]}
-  />
+
+  <img
+    style={{ backgroundColor: 'transparent' }}
+    src="https://raw.githubusercontent.com/iddev5/iddev5.github.io/refs/heads/snake/github-contribution-grid-snake.svg" />
 
 </div>
 
