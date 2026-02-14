@@ -11,6 +11,13 @@ import IconTopRight from "../assets/icons/arrow-top-right.svg";
     ]}>projects</a
   >
   <a
+    href="/research"
+    class:list={[
+      "navigation animation",
+      Astro.url.pathname.startsWith("/research") ? "text-accent" : "",
+    ]}>research</a
+  >
+  <a
     href="/posts/1"
     class:list={[
       "navigation animation",
@@ -21,8 +28,8 @@ import IconTopRight from "../assets/icons/arrow-top-right.svg";
     href="/Ayush Bardhan Tripathy.pdf"
     class="navigation animation flex"
     target="_blank"
-    >
-      cv
-      <IconTopRight class="relative size-4 top-1" />
-    </a>
+  >
+    cv
+    <IconTopRight class="relative top-1 size-4" />
+  </a>
 </nav>
