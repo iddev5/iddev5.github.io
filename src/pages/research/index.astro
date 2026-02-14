@@ -4,8 +4,8 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 
 <BaseLayout>
   <div class="center">
-    <div class="flex items-center gap-8">
-      <a href="/posts/1" class="heading">Patent & Design</a>
+    <div id="patent" class="flex items-center gap-8">
+      <a href="/research#patent" class="heading">Patent & Design</a>
     </div>
     <ol class="flex flex-col gap-8">
       <li>
@@ -29,5 +29,16 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         Utility Patent (Published), India, Application No.: 20253104743
       </li>
     </ol>
+
+    <div id="misc" class="flex items-center gap-8">
+      <a href="/research#misc" class="heading">Misc</a>
+    </div>
+    <div>
+      JSON file of The Bhagavad Gita (Annie Besant, 4th Edition) containing
+      Sanskrit and English verses, organised by chapter (discourse).
+      <a href="https://github.com/iddev5/bhagavad-gita-besant" class="underline"
+        >Source</a
+      >
+    </div>
   </div>
 </BaseLayout>
