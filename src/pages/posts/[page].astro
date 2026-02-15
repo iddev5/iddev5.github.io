@@ -57,7 +57,7 @@ const { page } = Astro.props as { page: { data: BlogType[] } };
                   month: "short",
                 })
                 .slice(0, 11)}
-              url={`/${blog.data.slug}`}
+              url={`/posts/${blog.data.slug}`}
               tags={blog.data.tags}
             />
           </li>
