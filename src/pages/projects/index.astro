@@ -1,11 +1,40 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProjectCard from "../../components/ProjectCard.astro";
+
+const projects = [
+  {
+    title: "TEDxVSSUT 2025 Official Website",
+    desc: "",
+    date: "Nov 2025",
+    url: "https://tedxvssut.in",
+    tags: ["react", "nextjs", "nodejs", "tailwind"],
+  },
+  {
+    title: "E-Summit VSSUT 2025 Official Website",
+    desc: "",
+    date: "Apr 2025",
+    url: "https://esummitvssut.in",
+    tags: ["react", "nextjs", "nodejs", "tailwind"],
+  },
+  {
+    title: "Devide",
+    desc: "An experimental, embeddable text editor engine",
+    date: "2024-Present",
+    url: "https://github.com/iddev5/devide",
+    tags: ["zig", "sdl2", "system"],
+  },
+];
 ---
 
 <BaseLayout>
   <div class="center">
     <div class="flex items-center gap-8">
       <a href="/posts/1" class="heading">Projects</a>
+    </div>
+
+    <div class="flex flex-col gap-8">
+      {projects.map((proj) => <ProjectCard {...proj} />)}
     </div>
   </div>
 </BaseLayout>
