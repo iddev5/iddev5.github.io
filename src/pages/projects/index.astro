@@ -2,22 +2,29 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProjectCard from "../../components/ProjectCard.astro";
 
+import tedxLogo from "../../assets/tedx-logo.png";
+import esummitLogo from "../../assets/esummit.png";
+import devideLogo from "../../assets/devide.svg";
+
 const projects = [
   {
-    title: "TEDxVSSUT 2025 Official Website",
-    desc: "",
+    logo: tedxLogo.src,
+    title: "TEDxVSSUT",
+    desc: "The official website of TEDxVSSUT 2025, organized by E-Cell, VSSUT",
     date: "Nov 2025",
     url: "https://tedxvssut.in",
     tags: ["react", "nextjs", "nodejs", "tailwind"],
   },
   {
-    title: "E-Summit VSSUT 2025 Official Website",
-    desc: "",
+    logo: esummitLogo.src,
+    title: "E-Summit",
+    desc: "The official website of E-Summit VSSUT 2025, organized by E-Cell, VSSUT",
     date: "Apr 2025",
     url: "https://esummitvssut.in",
     tags: ["react", "nextjs", "nodejs", "tailwind"],
   },
   {
+    logo: devideLogo.src,
     title: "Devide",
     desc: "An experimental, embeddable text editor engine",
     date: "2024-Present",
@@ -28,13 +35,15 @@ const projects = [
 ---
 
 <BaseLayout>
-  <div class="center">
-    <div class="flex items-center gap-8">
-      <a href="/posts/1" class="heading">Projects</a>
-    </div>
+  <div class="flex justify-center">
+    <div class="w-[60%]">
+      <div class="flex items-center gap-8">
+        <a href="/posts/1" class="heading">Projects</a>
+      </div>
 
-    <div class="flex flex-col gap-8">
-      {projects.map((proj) => <ProjectCard {...proj} />)}
+      <div class="grid grid-cols-3 gap-4">
+        {projects.map((proj) => <ProjectCard {...proj} />)}
+      </div>
     </div>
   </div>
 </BaseLayout>

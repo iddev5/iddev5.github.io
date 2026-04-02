@@ -68,17 +68,18 @@ export default function ThemeToggle() {
   };
 
   return (
-    <button
-      onClick={toggleTheme}
-      aria-label={`Activate ${theme === "light" ? "dark" : "light"} mode`}
-      aria-pressed={theme === "dark"}
-      title={`Activate ${theme === "light" ? "dark" : "light"} mode`}
-    >
-      {theme === "light" ? (
-        <IconMoon className="active:fill-foreground size-5" />
-      ) : (
-        <IconSun className="active:fill-foreground size-5" />
-      )}
-    </button>
+    <></>
+    // <button
+    //   onClick={toggleTheme}
+    //   aria-label={`Activate ${theme === "light" ? "dark" : "light"} mode`}
+    //   aria-pressed={theme === "dark"}
+    //   title={`Activate ${theme === "light" ? "dark" : "light"} mode`}
+    // >
+    //   {theme === "light" ? (
+    //     <IconMoon className="active:fill-foreground size-5" />
+    //   ) : (
+    //     <IconSun className="active:fill-foreground size-5" />
+    //   )}
+    // </button>
   );
 }

@@ -2,41 +2,43 @@
 import Socials from "./Socials.astro";
 ---
 
-<h1 class="heading">Hey</h1>
-<div class="paragraph">
-  <div class="flex flex-col md:flex-row items-center gap-[15px]">
+<div class="paragraph w-[100%] border-r-1 border-dashed border-zinc-300/20">
+  <div class="flex flex-col items-center gap-[15px] grayscale md:flex-row">
     <img src="./Ayush.jpg" width="200" height="200" />
     <div>
-      <p className="text-justify">
-        I am Ayush Bardhan Tripathy, a programmer, tech enthusiast and
-        a student at VSSUT, Burla currently pursuing B.Tech in Computer
-        Science and Engineering (Third year).
-      </p>
+      <h1 class="heading">Ayush Bardhan Tripathy</h1>
+      <h2 class="flex gap-4">
+        <span>Full Stack Developer</span><li>CSE Undergrad</li>
+      </h2>
+
+      <!-- <p class="text-justify">
+        I am Ayush Bardhan Tripathy, a programmer, tech enthusiast and a student
+        at VSSUT, Burla currently pursuing B.Tech in Computer Science and
+        Engineering (Third year).
+      </p> -->
       <Socials />
     </div>
   </div>
-  <p>
-     I contribute to open source projects. I'm interested in Web
-     Development, Backend Technologies, Operating Systems, Compilers,
-     Frameworks, WebAssembly, Embedded Systems and much more.
-  </p>
+  <!-- <p>
+    I contribute to open source projects. I'm interested in Web Development,
+    Backend Technologies, Operating Systems, Compilers, Frameworks, WebAssembly,
+    Embedded Systems and much more.
+  </p> -->
 
-  <img
-    style={{ backgroundColor: 'transparent' }}
-    src="https://raw.githubusercontent.com/iddev5/iddev5.github.io/refs/heads/snake/github-contribution-grid-snake-ocean.svg" />
-
+  <!-- <img
+    style={{ backgroundColor: "transparent" }}
+    src="https://raw.githubusercontent.com/iddev5/iddev5.github.io/refs/heads/snake/github-contribution-grid-snake-ocean.svg"
+  /> -->
 </div>
 
 <style>
-img {
-  background-color: white;
-  border-radius: 20px;
-  transition: transform 0.3s;
+  img {
+    background-color: white;
+    border-radius: 20px;
+    transition: transform 0.3s;
+  }
 
-}
-
-img:hover {
-  transform: scale(1.05);
-}
-
+  img:hover {
+    transform: scale(1.05);
+  }
 </style>

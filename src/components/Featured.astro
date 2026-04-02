@@ -17,27 +17,29 @@ const featuredBlogs = blogs_
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 ---
 
-<h2 class="section-heading">F E A T U R E D</h2>
-<ul class="grid gap-3 py-6 md:grid-cols-2">
-  {
-    featuredBlogs.map((blog: BlogType) => {
-      return (
-        <li>
-          <FeatureCard
-            title={blog.data.title}
-            date={blog.data.date
-              .toLocaleDateString("en-GB", {
-                day: "numeric",
-                month: "short",
-                year: "numeric",
-              })
-              .slice(0, 11)}
-            url={`/posts/${blog.data.slug}`}
-            tags={blog.data.tags}
-            readTime={blog.data.readTime}
-          />
-        </li>
-      );
-    })
-  }
-</ul>
+<div class="flex w-[80%] flex-col">
+  <h2 class="section-heading">F E A T U R E D</h2>
+  <ul class="grid gap-3 py-6">
+    {
+      featuredBlogs.map((blog: BlogType) => {
+        return (
+          <li>
+            <FeatureCard
+              title={blog.data.title}
+              date={blog.data.date
+                .toLocaleDateString("en-GB", {
+                  day: "numeric",
+                  month: "short",
+                  year: "numeric",
+                })
+                .slice(0, 11)}
+              url={`/posts/${blog.data.slug}`}
+              tags={blog.data.tags}
+              readTime={blog.data.readTime}
+            />
+          </li>
+        );
+      })
+    }
+  </ul>
+</div>

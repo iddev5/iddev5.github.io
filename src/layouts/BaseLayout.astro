@@ -13,7 +13,7 @@ import Seo from "../components/Seo.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
-import GridTopRight from "../assets/icons/grid-top-right.svg"
+import GridTopRight from "../assets/icons/grid-top-right.svg";
 
 const { title, description, author, url, pubDate } = Astro.props;
 ---
@@ -36,11 +36,13 @@ const { title, description, author, url, pubDate } = Astro.props;
       );
     </script>
   </head>
-  <body className="">
-    <GridTopRight className="absolute opacity-25 left-0 w-full bottom-0" />
-    <div  class="body-margin">
+  <body>
+    <div>
+      <!-- <GridTopRight class="absolute bottom-0 left-0 z-[0] w-full opacity-25" /> -->
+
       <Header />
-      <main class="main-margin bg-background relative z-1 min-h-svh border-black/10 border-1 rounded-2xl">
+      <!-- <main class="main-margin bg-background relative z-1 min-h-svh border-black/10 border-1 rounded-2xl"> -->
+      <main class="z-100 min-h-screen">
         <slot />
       </main>
       <Footer />

@@ -20,8 +20,8 @@
 
 /* COLOR SCHEME */
 .dark {
-  --background: var(--color-zinc-800);
-  --foreground: var(--color-zinc-300);
+  --background: #050816;
+  --foreground: var(--color-zinc-200);
   --accent: var(--color-yellow-500);
 }
 
