@@ -15,7 +15,7 @@ const { frontmatter, readTime } = Astro.props;
 >
   <ProgressBar client:idle />
   <article>
-    <div class="center">
+    <div class="center w-[90%]">
       <Title frontmatter={frontmatter} readTime={readTime} />
       <section class="markdown">
         <slot />
