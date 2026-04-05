@@ -2,7 +2,6 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Introduction from "../components/Introduction.astro";
 import Featured from "../components/Featured.astro";
-import TechStack from "../components/TechStack.astro";
 ---
 
 <BaseLayout
@@ -12,7 +11,7 @@ import TechStack from "../components/TechStack.astro";
   url="https://ayush.thedev.id"
 >
   <div class="flex h-screen flex-col items-center justify-center">
-    <section class="flex w-[80%] gap-8">
+    <section class="flex w-[80%] flex-col gap-8 md:flex-row">
       <Introduction />
       <Featured />
     </section>

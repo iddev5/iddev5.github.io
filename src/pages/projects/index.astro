@@ -45,12 +45,12 @@ const projects = [
 
 <BaseLayout>
   <div class="flex justify-center">
-    <div class="w-[60%]">
+    <div class="w-[85%] md:w-[60%]">
       <div class="flex items-center gap-8">
         <a href="/posts/1" class="heading">Projects</a>
       </div>
 
-      <div class="grid grid-cols-3 gap-4">
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
         {projects.map((proj) => <ProjectCard {...proj} />)}
       </div>
     </div>
