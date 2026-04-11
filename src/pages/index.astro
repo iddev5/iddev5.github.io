@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Introduction from "../components/Introduction.astro";
+import Introduction from "../components/Introduction.jsx";
 import Featured from "../components/Featured.astro";
 ---
 
@@ -12,7 +12,7 @@ import Featured from "../components/Featured.astro";
 >
   <div class="flex h-screen flex-col items-center justify-center">
     <section class="flex w-[80%] flex-col gap-8 md:flex-row">
-      <Introduction />
+      <Introduction client:only="react" />
       <Featured />
     </section>
   </div>
