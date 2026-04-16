@@ -6,7 +6,7 @@ const { years } = Astro.props;
   {
     years.map((year: string) => (
       <a
-        href={`/archive/${year}/1`}
+        href={`/posts/archive/${year}/1`}
         class:list={[
           "button animation",
           Astro.url.pathname.startsWith(`/archive/${year}`)

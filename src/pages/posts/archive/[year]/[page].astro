@@ -1,10 +1,10 @@
 ---
 import { getCollection } from "astro:content";
-import type { BlogType } from "../../../content.config";
-import BaseLayout from "../../../layouts/BaseLayout.astro";
-import PostCard from "../../../components/PostCard.astro";
-import Pagination from "../../../components/Pagination.astro";
-import Year from "../../../components/Year.astro";
+import type { BlogType } from "../../../../content.config";
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import PostCard from "../../../../components/PostCard.astro";
+import Pagination from "../../../../components/Pagination.astro";
+import Year from "../../../../components/Year.astro";
 
 const blogs: BlogType[] = await getCollection("blogs");
 const years = [
@@ -12,7 +12,7 @@ const years = [
 ];
 
 export async function getStaticPaths({ paginate }: { paginate: any }) {
-  const blogs: BlogType[] = await getCollection("blogs");
+  const blogs: BlogType[] = (await getCollection("blogs")).filter(blog => blog.data.draft === false);
   const years = [
     ...new Set(blogs.map((blog) => new Date(blog.data.date).getFullYear())),
   ];

@@ -7,6 +7,7 @@ author: Ayush
 tags: [achievement, patent, iot]
 featured: false
 editable: false
+draft: true
 ---
 
 <hr />

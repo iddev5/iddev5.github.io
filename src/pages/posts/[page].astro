@@ -18,7 +18,7 @@ export async function getStaticPaths({
 }: {
   paginate: (data: BlogType[], options: { pageSize: number }) => unknown;
 }) {
-  const blogs = await getCollection("blogs");
+  const blogs = (await getCollection("blogs")).filter(blog => blog.data.draft === false);
   blogs.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
   return paginate(blogs, { pageSize: 8 });
