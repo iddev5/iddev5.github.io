@@ -7,7 +7,7 @@ author: Ayush
 tags: [achievement, patent, iot, hackathon]
 featured: true
 editable: false
-draft: false
+draft: true
 ---
 
 <hr />
