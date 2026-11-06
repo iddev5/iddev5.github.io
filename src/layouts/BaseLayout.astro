@@ -35,16 +35,20 @@ const { title, description, author, url, pubDate } = Astro.props;
         saved || (prefersDark ? "dark" : "light"),
       );
     </script>
-    <script data-goatcounter="https://iddev.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+    <script
+      data-goatcounter="https://iddev.goatcounter.com/count"
+      async
+      src="//gc.zgo.at/count.js"></script>
   </head>
   <body>
     <div>
       <!-- <GridTopRight class="absolute bottom-0 left-0 z-[0] w-full opacity-25" /> -->
 
-      <Header />
+      <div class="m-auto w-[80%] md:w-[60%]">
+        <Header />
+      </div>
       <!-- <main class="main-margin bg-background relative z-1 min-h-svh border-black/10 border-1 rounded-2xl"> -->
-      <main class="min-h-screen z-100">
+      <main class="z-100 m-auto min-h-screen w-[80%] md:w-[60%]">
         <slot />
       </main>
       <!-- <Footer /> -->

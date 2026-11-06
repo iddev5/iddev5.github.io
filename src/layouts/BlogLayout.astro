@@ -13,11 +13,9 @@ const { frontmatter, readTime } = Astro.props;
   pubDate={frontmatter.date}
 >
   <article>
-    <div class="center w-[90%]">
-      <Title frontmatter={frontmatter} readTime={readTime} />
-      <section class="markdown">
-        <slot />
-      </section>
-    </div>
+    <Title frontmatter={frontmatter} readTime={readTime} />
+    <section class="markdown">
+      <slot />
+    </section>
   </article>
 </BaseLayout>

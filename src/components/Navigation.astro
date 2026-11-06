@@ -4,6 +4,13 @@ import IconTopRight from "../assets/icons/arrow-top-right.svg";
 
 <nav class="flex items-center justify-center gap-4">
   <a
+    href="/"
+    class:list={[
+      "navigation animation",
+      Astro.url.pathname.startsWith("/home") ? "text-accent" : "",
+    ]}>home</a
+  >
+  <a
     href="/projects"
     class:list={[
       "navigation animation",
