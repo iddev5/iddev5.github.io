@@ -26,5 +26,7 @@ const { Content, headings } = await render(blog);
   headings={headings}
   readTime={blog.data.readTime}
 >
-  <Content />
+  <div class="mt-10">
+    <Content />
+  </div>
 </BlogLayout>

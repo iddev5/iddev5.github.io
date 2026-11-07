@@ -27,35 +27,28 @@ const { page } = Astro.props as { page: { data: BlogType[] } };
 const { tag } = Astro.params as { tag: string };
 ---
 
-<BaseLayout
-  title={`Tag ${tag}`}
-  description={`Blogs tagged with ${tag}`}
-  author="Rahul"
-  url={`https://ryze.pages.dev/tags/${tag}/1`}
->
-  <div class="center w-[90%]">
-    <h1 class="sub-heading">{tag}</h1>
-    <ul class="my-3 space-y-3">
-      {
-        page.data.map((blog: BlogType) => {
-          return (
-            <li>
-              <PostCard
-                title={blog.data.title}
-                date={blog.data.date
-                  .toLocaleDateString("en-GB", {
-                    day: "numeric",
-                    month: "short",
-                  })
-                  .slice(0, 11)}
-                url={`/${blog.data.slug}`}
-                tags={blog.data.tags}
-              />
-            </li>
-          );
-        })
-      }
-    </ul>
-  </div>
+<BaseLayout>
+  <h1 class="sub-heading">{tag}</h1>
+  <ul class="my-3 space-y-3">
+    {
+      page.data.map((blog: BlogType) => {
+        return (
+          <li>
+            <PostCard
+              title={blog.data.title}
+              date={blog.data.date
+                .toLocaleDateString("en-GB", {
+                  day: "numeric",
+                  month: "short",
+                })
+                .slice(0, 11)}
+              url={`/posts/${blog.data.slug}`}
+              tags={blog.data.tags}
+            />
+          </li>
+        );
+      })
+    }
+  </ul>
   <Pagination page={page} />
 </BaseLayout>
