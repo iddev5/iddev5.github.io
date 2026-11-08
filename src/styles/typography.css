@@ -42,7 +42,7 @@
     @apply pb-6 text-3xl font-light tracking-widest;
   }
   .blog-title {
-    @apply py-3 pt-6 text-5xl font-semibold select-none;
+    @apply py-3 pt-6 text-3xl font-semibold select-none;
   }
 
   /* common */
